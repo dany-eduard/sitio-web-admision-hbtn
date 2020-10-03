@@ -1,0 +1,261 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 1%;
+  padding: 0;
+}
+
+.right {
+	float: right;
+	margin: -10px 170px 3px 15px;
+}
+
+.box-buttons {
+  display: block;
+  flex-direction: row;
+  position: fixed;
+  z-index: 100;
+  margin-top: 0;
+}
+
+.butto {
+  display: inline;
+}
+
+h1 {
+  font-size: 2.5em;
+  padding-left: 5px;
+  padding-inline-start: 20px;
+  color: #122e7c;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #2149b9;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #0043fb;
+}
+
+p {
+  color: rgb(44, 44, 44);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  margin: 2px;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-top: 20px;
+  flex: 2;
+  flex-direction: row;
+}
+
+#holberton-logo {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+aside {
+  margin: 20px;
+  margin-top: 4%;
+  margin-right: 3%;
+  flex: 1;
+  text-align: center;
+  background-color: #f0f0f0;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23e2d6f6' fill-opacity='0.64'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  padding: 30px;
+  border-radius: 4px;
+}
+
+#photo-profile {
+  display: block;
+  margin: auto;
+  margin-bottom: -20px;
+}
+
+aside h1 {
+  font-size: 1.8em;
+  padding-inline-start: 0;
+}
+
+aside h2 {
+  font-size: 16px;
+}
+
+aside p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, sans-serif;
+  font-size: 14px;
+  color: #111111;
+  text-align: justify;
+}
+
+ul.sidenav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.sidenav li {
+  float: left;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+@media (max-width: 800px) {
+  body.works_on_smartphone {
+    display: block;
+    margin-top: 0;
+  }
+  body.works_on_smartphone main {
+    display: block;
+  }
+  header.right {
+    float: none;
+  }
+  article h1 {
+    margin-top: 60px;
+  }
+  .right {
+    float: right;
+    margin: -59px 170px 3px 15px;
+    
+  }
+}
+
+@media screen and (max-width: 590px) {
+  article h1 {
+    margin-top: 210px;
+  }
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+  ul.sidenav li {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.button-submit {
+  background-color: #0fc709;
+  border: #333;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.2s;
+}
+
+.button-submit:hover {
+  background-color: #5fff54;
+  color: rgb(0, 0, 0);
+}
+
+.button-warning {
+  background-color: #ffe600;
+  border: #333;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.2s;
+}
+
+.button-warning:hover {
+  background-color: #fffc54;
+  color: rgb(0, 0, 0);
+}
+
+.mgroup-2 {
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.box-container {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.box-container .redes {
+  display: inline;
+}
+
+.contenedor-responsive {
+  position: relative;
+  padding-bottom: 60%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.contenedor-responsive iframe,
+.contenedor-responsive object,
+.contenedor-responsive embed {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #333;
+  text-align: center;
+  font-size: small;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: aqua;
+  text-decoration: none;
+}
+
+/* image JS challenge */
+
+img {
+	max-width: 100%;
+}
+
+img.small {
+	width: 100px;
+}
